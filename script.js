@@ -1,7 +1,7 @@
 function getComputerChoice(){
     let choices = ["rock", "paper", "scissors"]
     let computerChoiceIndex = Math.floor(Math.random()*3)
-    console.log(computerChoiceIndex)
+    console.log(`The computer chose ${choices[computerChoiceIndex]}`)
     return choices[computerChoiceIndex]
 }
 
@@ -29,3 +29,11 @@ function playGameRound(computerSelection, playerSelection){
     }
 }
 
+function playGame(){
+    return playGameRound(getComputerChoice(), prompt("What is your move: rock, paper, or scissors?"))
+}
+
+
+for(let i=0; i<5; i++){
+    console.log(playGame())
+}
