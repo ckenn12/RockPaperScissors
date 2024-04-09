@@ -1,1 +1,1 @@
-# RockPaperScissors
+This is a test for a basic rock, paper, scissors game.
